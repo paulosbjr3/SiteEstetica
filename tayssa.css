@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700;800&display=swap');
+/*cores*/
+:root{
+    --main-color: #f7e6df;
+    --first-color: #75492b;
+    --second-color: #dfd6a7;
+    --white-color: #ffffff;
+    --black-color: #151515;
+
+    /*---------------FONT  AND TYPOGRAPHY-------------------*/
+    --font-cursive: 'Great Vibes', cursive;
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+
+    /*---------------MARGINS-------------------*/
+    --mb-05: 0.5rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*---------------Z INDEXS-------------------*/
+    --Z-fixed: 100;
+    --z-tooltip: 10;
+    --z_negative: -1;
+}
+
+/*----------------BASE------------*/
+.container{   /*mudar para .container depois*/
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section{
+    padding: calc(var(--header-height) + 20px) 0;
+}
+.row{
+    display: flex;
+   
+    
+
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: var(--white-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    overflow-x: hidden;
+}
+/*-------------HEADER---------*/
+header{
+    box-sizing: border-box;
+    display: block;
+    color: var(--main-color);
+    background-color: var(--white-color);
+    padding: 20px;
+    width: 100%;
+   
+   
+    
+}
+header .flex{
+    justify-content: space-around;
+}
+
+
+.nav ul .item-nav a{
+    font-family: var(--font-medium);
+    font-weight: bold;
+    
+    
+}
+.flex{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom : 0px;
+    margin-left : 74px;
+    margin-right : 74px;
+    margin-top  :0px;
+}
+
+
+
+header ul{
+    display: flex;    
+    list-style: none;
+
+}
+header li{
+    margin-right: 20px;}
+a{
+    text-decoration: none;
+    color: var(--black-color)
+}
+/*----------------------BUTTON----------*/
+.btn{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: 1px solid var(--first-color);
+    border-radius: 50px;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    line-height: var(--normal-font-size);
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: var(--font-light);
+    
+}
+.btn a {color: var(--white);}
+
+    
+
+
+.txt-home :hover{
+    color: var(--first-color);
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+
+
+
+/*------------------HOME-----------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    border-radius: 0 0 300px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home .txt-home{    
+    color: var(--white-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        
+    
+}
+.txt-home h1{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    line-height: calc(var(--big-font-size) + 30px);
+    letter-spacing: 0.1em;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1-5);
+    
+    
+}
+
+.txt-home p{
+    font-weight: var(--font-medium);
+    text-align: center;
+    line-height: calc(var(--normal-font-size) + 10px);
+    padding: 0 3rem;
+    letter-spacing: 0.2em;
+    color: var(--black-color);
+    margin-bottom: var(--mb-1-5);
+}
+
+   
+.home .txt-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    
+    
+}
+
+.img-home img {
+    margin-top: 10%;
+
+}
+
+
+
+ 
+/*----------------------ABOUT----------------*/
+
+.about .container .row{
+    display: flex;
+    flex-direction: column; /* Empilha os filhos verticalmente */
+    align-items: center; /* Centraliza os filhos horizontalmente */
+    
+}
+.about{      
+    width: 100%;
+    background-image: url(assests/img/arabesco-left-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: var(--z_negative);  
+    justify-content: space-between;
+       
+
+}
+.detalhe-about-content{
+    display: flex;
+    
+}
+.detalhe-about{
+    width: 100%;
+    padding: 2rem;
+    width: 100%;
+ 
+}
+
+.txt-about{
+    position: relative;
+    padding: 2rem;
+}
+
+
+.detalhe-about-content{
+    border: 2px solid var(--first-color);
+    border-radius: 30px;
+    padding: 1rem;
+    
+    
+
+
+}
+.titulo {
+    order: -1; /* Coloca a div "titulo" acima na ordem de exibição */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adapte conforme necessário */
+}
+.img-about{
+    width: 50%;
+}
+
+.img-about img{
+    width: 100%;
+    border-radius: 30px;
+    filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.25));
+    
+}
+
+
+.txt-about{
+
+}
+
+.about .titulo{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+    line-height: var(--big-font-size);
+    color: var(--first-color);
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.titulo h1{
+
+text-align: center;
+}
+
+.titulo span{
+    font-weight: var(--font-light);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-font-size);
+    color: var(--black-color);
+}
+/*--------------FIM ABOUT-------------------*/
+
+/*---------------SERVICES---------------*/
+.box .inner{    
+    padding: 20px;       
+    text-align: center;
+}
+.services{
+    background-image: url(assests/img/arabesco-left-top.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: var(--z_negative);
+    margin-bottom: 5%;  
+    box-sizing: border-box;
+    
+    
+}
+.services .container .row{   
+    align-items: center;   
+    flex-direction: column;
+}
+.grid{
+    display: flex;
+    
+}
+.services .container .row .services-content-description .box:hover {
+    border: 2px solid;
+    border-color: var(--first-color);
+    transition: 0.2s;
+    transform: scale(1.1);
+  
+}
+
+
+
+
+
+
+
+
+/*------------FOOTER---------*/
+footer{
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+footer h2{
+    color: var(--first-color);
+}
+.footer-list{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--first-color);
+    background-color: ;
+    
+    
+   
+}
+.redes a{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    
+}
+.footer-dados p{
+    font-weight: var(--font-medium);
+    line-height: calc(var(--normal-font-size) + 10px);
+    text-align: center;
+}
+
+.footer-dados h2{
+    text-align: center;
+}
